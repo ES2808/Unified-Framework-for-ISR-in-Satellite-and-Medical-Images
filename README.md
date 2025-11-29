@@ -16,7 +16,8 @@ This project implements a Unified Super-Resolution model capable of handling bot
 
 ### 1. Clone the Repository
 ```bash
-git clone <repository_url>
+git clone https://github.com/ES2808/Unified-Framework-for-ISR-in-Satellite-and-Medical-Images.git
+
 cd unified_sr_project
 ```
 
