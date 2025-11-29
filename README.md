@@ -8,6 +8,24 @@ This project implements a Unified Super-Resolution model capable of handling bot
 - **Tiled Inference**: Handles large images (like satellite maps) without running out of memory.
 - **Self-Ensemble**: Optional test-time augmentation for higher quality.
 
+
+## Repository Structure
+
+```
+unified_sr_project/
+├── checkpoints/          # Trained model weights
+├── data/                 # Dataset directory (Medical/Satellite)
+├── src/                  # Source code
+│   ├── models/           # Model architectures (UnifiedModel, Heads, etc.)
+│   └── utils/            # Utilities (Dataset, Metrics, Preprocessing)
+├── demo.ipynb            # Interactive demo notebook
+├── inference.py          # Script for running inference
+├── train.py              # Main training script
+├── app.py                # Streamlit Web Interface (Legacy)
+├── requirements.txt      # Python dependencies
+└── README.md             # Project documentation
+```
+
 ## Installation
 
 ### Prerequisites
@@ -64,21 +82,6 @@ To train the model from scratch:
 python train.py --medical_data data/medical --satellite_data data/satellite
 ```
 
-## Repository Structure
 
-```
-unified_sr_project/
-├── checkpoints/          # Trained model weights
-├── data/                 # Dataset directory (Medical/Satellite)
-├── src/                  # Source code
-│   ├── models/           # Model architectures (UnifiedModel, Heads, etc.)
-│   └── utils/            # Utilities (Dataset, Metrics, Preprocessing)
-├── demo.ipynb            # Interactive demo notebook
-├── inference.py          # Script for running inference
-├── train.py              # Main training script
-├── app.py                # Streamlit Web Interface (Legacy)
-├── requirements.txt      # Python dependencies
-└── README.md             # Project documentation
-```
 
 
